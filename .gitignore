@@ -1,0 +1,19 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+problem2/node_modules/
+problem2/.next/
+problem2/out/
+problem2/.env
+problem2/.env.local
+problem2/.env.development.local
+problem2/.env.test.local
+problem2/.env.production.local
