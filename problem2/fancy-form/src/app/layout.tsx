@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ConfigProvider } from "antd";
+import { Clash_Grotesk } from "./fonts/clask-grotesk/ClashGrotesk";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={Clash_Grotesk.className}>
+      <body>
+        <ConfigProvider theme={{ token: { fontFamily: Clash_Grotesk.style.fontFamily } }}>
+          <main>{children}</main>
+        </ConfigProvider>
+      </body>
     </html>
   );
 }
