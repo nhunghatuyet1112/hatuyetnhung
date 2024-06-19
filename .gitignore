@@ -17,3 +17,6 @@ problem2/.env.local
 problem2/.env.development.local
 problem2/.env.test.local
 problem2/.env.production.local
+
+problem3/node_modules/
+problem3/.next/
